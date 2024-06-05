@@ -2,14 +2,6 @@
 
 MailBag is a single-user webmail application that supports IMAP for receiving emails and SMTP for sending emails. The application also includes functionality for managing contacts.
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [Project Structure](#project-structure)
-- [Configuration](#configuration)
-
 ## Installation
 
 To set up the MailBag application, follow these steps:
@@ -17,8 +9,8 @@ To set up the MailBag application, follow these steps:
 1. **Clone the repository:**
 
     ```bash
-    git clone <repository_url>
-    cd mailbag
+    git clone https://github.com/monniechuang/MailBag.git
+    cd MailBag
     ```
 
 2. **Install dependencies for both the client and server:**
