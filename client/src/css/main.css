@@ -1,0 +1,64 @@
+/* Main container that holds the entire user interface. */
+.appContainer {
+  display: grid; /* Using grid layout for flexible and organized positioning of elements. */
+  grid-template-columns: 150px 1fr 240px; /* Three columns: for mailboxes, main content, and contacts. */
+  grid-template-rows: 50px 1fr; /* Two rows: for the toolbar and main content area. */
+  width: 100vw; /* Full viewport width. */
+  height: 100vh; /* Full viewport height. */
+}
+
+/* Styling for the toolbar at the top of the application. */
+.toolbar {
+  grid-column: 1 / 4; /* Spanning across all columns. */
+  grid-row: 1 / 1; /* Positioned in the first row. */
+  border-bottom: 1px solid #e0e0e0; /* A bottom border for visual separation. */
+  padding-top: 8px;
+  padding-left: 4px;
+}
+
+/* Style for the list of mailboxes located on the left side. */
+.mailboxList {
+  grid-column: 1 / 1; /* Occupying the first column. */
+  grid-row: 2 / 2; /* Positioned in the second row. */
+  border-right: 1px solid #e0e0e0; /* Right border to separate from main content. */
+  padding-top: 6px;
+  padding-left: 4px;
+  overflow: auto; /* Allows scrolling for long lists of mailboxes. */
+}
+
+/* Container for the central area, includes the message list and views. */
+.centerArea {
+  display: grid; /* Grid layout to manage internal structure. */
+  grid-template-rows: 200px 1fr; /* Two rows: for the message list and the views below it. */
+}
+
+/* Style for the message list at the top part of the center area. */
+.messageList {
+  border-bottom: 1px solid #e0e0e0; /* Bottom border for separation. */
+  grid-row: 1 / 1; /* Positioned in the first row of its grid. */
+  overflow: auto; /* Allows scrolling for long lists of messages. */
+}
+
+/* Container for message and contact views below the message list. */
+.centerViews {
+  grid-row: 2 / 2; /* Positioned in the second row of its grid. */
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  overflow: auto; /* Allows scrolling for long content. */
+}
+
+/* Style for the contact list positioned on the right. */
+.contactList {
+  grid-column: 3 / 3; /* Occupying the third column. */
+  grid-row: 2 / 2; /* Positioned in the second row. */
+  border-left: 1px solid #e0e0e0; /* Left border for visual separation. */
+  padding-top: 4px;
+  padding-left: 4px;
+  overflow: auto; /* Enables scrolling for long contact lists. */
+}
+
+/* Overrides the default disabled color for message ID and date fields in the message view. */
+.messageInfoField {
+  color: #000000!important; /* Ensures text is black for better visibility. */
+}
