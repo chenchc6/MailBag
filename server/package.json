@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "npx tsc && node ./dist/main.js",
-    "dev": "node ./node_modules/nodemon/bin/nodemon.js -e ts --exec \"npm run compile\""
+    "dev": "node ./node_modules/nodemon/bin/nodemon.js -e ts --exec \"npm run compile\"",
+    "start": "node ./dist/main.js"
   },
   "author": "",
   "license": "ISC",

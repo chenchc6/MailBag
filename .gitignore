@@ -51,3 +51,8 @@ server/dist/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# Logs
+logs
+*.log
+logs/
